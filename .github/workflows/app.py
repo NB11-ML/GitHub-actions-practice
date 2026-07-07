@@ -2,6 +2,8 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+print("printer")
+
 print("testing")
 @app.route('/')
 def hello_world():
