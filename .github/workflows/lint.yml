@@ -22,4 +22,7 @@ jobs:
       - name: Install Linter
         run: pip install ruff
 
+      - name: Check Files Lintimg
+        run: ruff check .
+
     
