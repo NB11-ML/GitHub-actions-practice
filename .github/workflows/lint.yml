@@ -5,7 +5,8 @@ name: Auto Linter
 
 on:
   push:
-    paths: "*.py" 
+    paths: 
+      -  "*.py" 
     # Whenever code is pushed in any python file (*.py) the workflow should run
 
 jobs:
