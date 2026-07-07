@@ -1,4 +1,4 @@
-# This code is modified to check linter
+# This code is modified to check linter in this file
 from flask import Flask, render_template
 app = Flask(__name__)
 
