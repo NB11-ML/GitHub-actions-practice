@@ -14,8 +14,9 @@ jobs:
     # Can also use " uses: git clone <repo url>"
     steps:
       - name: Checkout/Clone the code
-        uses: actions/checkout@v7  #This steps will automticlly clone the code of the current branch into the runner
-    # This step will install the Linting tool
+        uses: actions/checkout@v6
+        # This steps will automticlly clone the code of the current branch into the runner
+        # This step will install the Linting tool
       - name: install linter
         run: pip install ruff
 
