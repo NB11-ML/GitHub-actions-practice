@@ -1,0 +1,27 @@
+# Workflow [No indendation req for workflow]
+# Should have name
+name: Hello 
+
+# When the workflow should run(Give Indentation)
+on:
+  workflow_dispatch:                    # workflow_dispatch will allow to run it manually trigger a workfloe run, you can also use pull, push etc 
+
+# Jobs
+# Should be inside the worfflow
+# job Tells what the workflow will do
+
+jobs:                                   # There can be one or more than one tasks/jobs.Job is an object so needs indendation.
+  say-hello:                            # First job craeted with name say-hello
+    runs-on: ubuntu-latest              # Will run in ubuntu, creates a Ephermal Container with ubuntu running
+    # That Ephermal Container will have Steps to execute, hence name those steps and use run: run has the command
+    
+    # Steps
+    # Should be inside the job
+    
+    steps:                              # It can be list of steps will use indentation (using tab) and the '-'
+      - name: say hello to everyone     # Step name here we have given say hello to everyone
+        run: echo "Hello Dosto"         # what you want to run
+
+
+# Actions
+# Should be inside the Steps
